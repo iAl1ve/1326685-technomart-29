@@ -15,23 +15,25 @@
       <input type="search" placeholder="Поиск:">
     </form>
 
-    <a href="#!">Закладки: 0</a>
-    <a href="#!">Корзина: 0</a>
-    <a href="#!">Оформить заказ</a>
+    <ul>
+      <li><a href="#!">Закладки: 0</a></li>
+      <li><a href="#!">Корзина: 0</a></li>
+      <li><a href="#!">Оформить заказ</a></li>
+    </ul>
   </div>
 
   <div>
-    <i>Интернет-магазин  строительных материалов  и инструментов для ремонта</i>
+    <p>Интернет-магазин  строительных материалов  и инструментов для ремонта</p>
 
     <address>
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </address>
 
-    <div>
-      <a href="#!">Войти</a>
-      <a href="#!">Регистрация</a>
-    </div>
+    <ul>
+      <li><a href="#!">Войти</a></li>
+      <li><a href="#!">Регистрация</a></li>
+    </ul>
   </div>
 
   <nav>
@@ -114,53 +116,61 @@
 
     <ul>
       <li>
-        <div>
-          <button type="button">Купить</button>
-          <button type="button">В закладки</button>
-        </div>
-        <a href="#!">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCHBFG 9000">
-          <h3>Перфоратор BOSCH BFG 9000</h3>
-        </a>
-        <s>32500 р.</s>
-        <p>25500 р.</p>
+        <article>
+          <ul>
+            <li><button type="button">Купить</button></li>
+            <li><button type="button">В закладки</button></li>
+          </ul>
+          <a href="#!">
+            <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCHBFG 9000">
+            <h3>Перфоратор BOSCH BFG 9000</h3>
+          </a>
+          <s>32500 р.</s>
+          <p>25500 р.</p>
+        </article>
       </li>
       <li>
-        <span>New</span>
-        <div>
-          <button type="button">Купить</button>
-          <button type="button">В закладки</button>
-        </div>
-        <a href="#!">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCHBFG 9000">
-          <h3>Перфоратор BOSCH BFG 3000</h3>
-        </a>
-        <s>22500 р.</s>
-        <p>15500 р.</p>
+        <article>
+          <span>New</span>
+          <ul>
+            <li><button type="button">Купить</button></li>
+            <li><button type="button">В закладки</button></li>
+          </ul>
+          <a href="#!">
+            <img src="https://via.placeholder.com/184x164" width="184" height="164" alt="Перфоратор BOSCHBFG 9000">
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+          </a>
+          <s>22500 р.</s>
+          <p>15500 р.</p>
+        </article>
       </li>
       <li>
-        <div>
-          <button type="button">Купить</button>
-          <button type="button">В закладки</button>
-        </div>
-        <a href="#!">
-          <img src="https://via.placeholder.com/184x164" width="184" height="164"  alt="Перфоратор BOSCHBFG 9000">
-          <h3>Перфоратор BOSCH BFG 6000</h3>
-        </a>
-        <s>30500 р.</s>
-        <p>25500 р.</p>
+        <article>
+          <ul>
+            <li><button type="button">Купить</button></li>
+            <li><button type="button">В закладки</button></li>
+          </ul>
+          <a href="#!">
+            <img src="https://via.placeholder.com/184x164" width="184" height="164"  alt="Перфоратор BOSCHBFG 9000">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+          </a>
+          <s>30500 р.</s>
+          <p>25500 р.</p>
+        </article>
       </li>
       <li>
-        <span>New</span>
-        <div>
-          <button type="button">Купить</button>
-          <button type="button">В закладки</button>
-        </div>
-        <a class="product-link" href="#!">
-          <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCHBFG 9000">
-          <h3>Перфоратор BOSCH BFG 2000</h3>
-        </a>
-        <p>12500 р.</p>
+        <article>
+          <span>New</span>
+          <ul>
+            <li><button type="button">Купить</button></li>
+            <li><button type="button">В закладки</button></li>
+          </ul>
+          <a class="product-link" href="#!">
+            <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSCHBFG 9000">
+            <h3>Перфоратор BOSCH BFG 2000</h3>
+          </a>
+          <p>12500 р.</p>
+        </article>
       </li>
     </ul>
   </section>
@@ -255,38 +265,40 @@
   </section>
 
   <section class="about">
-    <h2>Компания «Тexномарт» <span class="visually-hidden">о нас</span></h2>
+    <div>
+      <h2>Компания «Тexномарт» <span class="visually-hidden">о нас</span></h2>
 
-    <p>
-      Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-    </p>
+      <p>
+        Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+      </p>
 
-    <p>
-      Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
-    </p>
+      <p>
+        Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
+      </p>
 
-    <ul>
-      <li>Деловые линии</li>
-      <li>Автотрейдинг</li>
-      <li>ЖелДорЭкспедиция</li>
-    </ul>
+      <ul>
+        <li>Деловые линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
+      </ul>
 
-    <a href="#!">Подробнее о компании</a>
+      <a href="#!">Подробнее о компании</a>
+    </div>
+
+    <section class="contacts">
+      <h3>Контакты</h3>
+
+      <p>
+        Вы можете забрать товар сами, заехав в наш офис:
+      </p>
+
+      <a href="#!">
+        <img src="https://via.placeholder.com/300x158" alt="Карта офиса компании">
+      </a>
+
+      <a href="#!">Заблудились? Напишите нам!</a>
+    </section>
   </section>
-
-  <div class="contacts">
-    <h3>Контакты</h3>
-
-    <p>
-      Вы можете забрать товар сами, заехав в наш офис:
-    </p>
-
-    <a href="#!">
-      <img src="https://via.placeholder.com/300x158" alt="Карта офиса компании">
-    </a>
-
-    <a href="#!">Заблудились? Напишите нам!</a>
-  </div>
 </main>
 
 <footer>
@@ -341,11 +353,10 @@
       <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </section>
 
-    <section class="development">
-      <h2 class="visually-hidden">Информация о разработчике</h2>
+    <div class="development">
       <p>Разработано —</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
-    </section>
+    </div>
   </div>
 
 </footer>
