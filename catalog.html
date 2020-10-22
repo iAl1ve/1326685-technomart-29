@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-body">
+<body class="page-body page-catalog">
 <header class="header">
   <div class="header__toolbar container">
       <a class="header__logo logo" href="index.html">
@@ -50,12 +50,11 @@
     <div class="header__info-user">
       <div class="header__signin-btns">
         <a class="header__signin-link" href="#!">
-          <svg width="20" height="18" class="header__icon-login"><use xlink:href="#icon-login"></use></svg>
+          <svg width="20" height="18" class="header__icon-login"><use xlink:href="#icon-user"></use></svg>
           Равшан Джамшутович
         </a>
-        <a class="header__signin-link" href="#!">
+        <a class="header__signin-link" href="#!" aria-label="Выход из логина">
           <svg width="20" height="17" class="header__icon-logout"><use xlink:href="#icon-logout"></use></svg>
-          Выход
         </a>
       </div>
 
@@ -70,7 +69,7 @@
     </div>
   </div>
 
-  <nav class="header__nav">
+  <nav class="header__nav container">
     <ul class="header__nav-list">
       <li class="header__nav-item">
         <a class="header__nav-link" href="index.html">Главная</a>
@@ -98,7 +97,7 @@
 </header>
 
 <main>
-  <section class="catalog">
+  <section class="catalog container">
     <h1 class="catalog__title">Перфораторы</h1>
 
     <ol class="catalog__breadcrumbs breadcrumbs">
@@ -339,20 +338,19 @@
         <a class="pagination__btn" href="#!">Следующая</a>
       </li>
     </ul>
+  </section>
 
-    <section class="catalog__description">
-      <div class="container">
-        <h2 class="catalog__description-title">Пара слов о перфораторах</h2>
-        <p class="catalog__description-text">
-          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-        </p>
-        <p class="catalog__description-text">
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-        <p class="catalog__description-text">В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-        </p>
-      </div>
-    </section>
-
+  <section class="catalog__description">
+    <div class="container">
+      <h2 class="catalog__description-title">Пара слов о перфораторах</h2>
+      <p class="catalog__description-text">
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+      </p>
+      <p class="catalog__description-text">
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+      <p class="catalog__description-text">В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+      </p>
+    </div>
   </section>
 </main>
 
@@ -418,18 +416,18 @@
 
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__btn" href="#!">Вконтакте
-              <svg width="26" height="15" class="social__icon-vk"><use xlink:href="#icon-vk"></use></svg>
+            <a class="social__btn" href="#!" aria-label="Вконтакте">
+              <svg width="28" height="15" class="social__icon"><use xlink:href="#icon-vk"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__btn" href="#!">Facebook
-              <svg width="12" height="22" class="social__icon-fb"><use xlink:href="#icon-fb"></use></svg>
+            <a class="social__btn" href="#!" aria-label="Facebook">
+              <svg width="12" height="22" class="social__icon"><use xlink:href="#icon-fb"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__btn" href="#!">Instagram
-              <svg width="21" height="21" class="social__icon-insta"><use xlink:href="#icon-insta"></use></svg>
+            <a class="social__btn" href="#!" aria-label="Instagram">
+              <svg width="21" height="21" class="social__icon"><use xlink:href="#icon-insta"></use></svg>
             </a>
           </li>
         </ul>

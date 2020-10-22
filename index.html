@@ -60,7 +60,7 @@
     </ul>
   </div>
 
-  <nav class="header__nav">
+  <nav class="header__nav container">
     <ul class="header__nav-list">
       <li class="header__nav-item">
         <a class="header__nav-link">Главная</a>
@@ -90,75 +90,77 @@
 <main>
   <h1 class="visually-hidden">«Техномарт» - строительный интернет-магазин </h1>
 
-  <section class="promo">
+  <section class="promo container">
     <h2 class="visually-hidden">Промо-блок магазина</h2>
 
     <article class="promo__block promo__block--materials">
       <span class="status-new">New</span>
       <h3 class="promo__block-title">Материалы</h3>
       <a class="promo__block-link" href="#!">На любой вкус</a>
-      <svg width="44" height="65" class="promo__block-icon-materials"><use xlink:href="#icon-materials"></use></svg>
+      <svg width="44" height="65" class="promo__block-icon"><use xlink:href="#icon-materials"></use></svg>
     </article>
     <article class="promo__block promo__block--tool">
       <h3 class="promo__block-title">Инструменты</h3>
       <a class="promo__block-link" href="#!">На все случаи</a>
-      <svg width="75" height="61" class="promo__block-icon-tool"><use xlink:href="#icon-tool"></use></svg>
+      <svg width="75" height="61" class="promo__block-icon"><use xlink:href="#icon-tool"></use></svg>
     </article>
     <article class="promo__block promo__block--technics">
       <h3 class="promo__block-title">Техника</h3>
       <a class="promo__block-link" href="#!">Для стройки</a>
-      <svg width="78" height="62" class="promo__block-icon-technics"><use xlink:href="#icon-technics"></use></svg>
+      <svg width="78" height="62" class="promo__block-icon"><use xlink:href="#icon-technics"></use></svg>
     </article>
     <article class="promo__block promo__block--discounts">
       <h3 class="promo__block-title">Скидка 50%</h3>
       <a class="promo__block-link" href="#!">На 350 товаров</a>
-      <svg width="78" height="62" class="promo__block-icon-discounts"><use xlink:href="#icon-discounts"></use></svg>
+      <svg width="78" height="62" class="promo__block-icon"><use xlink:href="#icon-discounts"></use></svg>
     </article>
     <article class="promo__block promo__block--delivery">
       <h3 class="promo__block-title">Доставка</h3>
       <a class="promo__block-link" href="#!">Бесплатно</a>
-      <svg width="78" height="63" class="promo__block-icon-delivery"><use xlink:href="#icon-delivery"></use></svg>
+      <svg width="78" height="63" class="promo__block-icon"><use xlink:href="#icon-delivery"></use></svg>
     </article>
 
+    <section class="slider">
+
+      <ul class="slider__list">
+        <li class="slider__item">
+
+          <div class="slider__item-wrapper">
+            <h2 class="slider__title">Перфораторы</h2>
+            <p class="slider__desc">Настоящие мужские игрушки</p>
+          </div>
+
+          <img src="img/perforators.jpg" width="620" height="266" alt="Строитель работает перфоратором BOSCH ">
+
+          <a class="slider__btn btn" href="catalog.html">Открыть каталог</a>
+        </li>
+        <li class="slider__item visually-hidden">
+
+          <div class="slider__item-wrapper">
+            <h2 class="slider__title">Дрели</h2>
+            <p class="slider__desc">Соседям на радость!</p>
+          </div>
+
+          <img src="img/drills.jpg" width="620" height="266" alt="Строитель сверлит дрелью BOSCH">
+          <a class="slider__btn btn" href="catalog.html">Открыть каталог</a>
+        </li>
+      </ul>
+
+      <button class="slider__back" type="button" disabled>Назад</button>
+      <button class="slider__next" type="button">Вперед</button>
+
+      <div class="slider__toggles">
+        <button class="slider__toggle slider__toggle--active" type="button">Первый слайд из двух</button>
+        <button class="slider__toggle" type="button">Второй слайд из двух</button>
+      </div>
+
+    </section>
+
   </section>
 
-  <section class="slider">
 
-    <ul class="slider__list">
-      <li class="slider__item">
 
-        <div class="slider__item-wrapper">
-          <h2 class="slider__title">Перфораторы</h2>
-          <p class="slider__desc">Настоящие мужские игрушки</p>
-        </div>
-
-        <img src="img/perforators.jpg" width="620" height="266" alt="Строитель работает перфоратором BOSCH ">
-
-        <a class="slider__btn btn" href="catalog.html">Открыть каталог</a>
-      </li>
-      <li class="slider__item">
-
-        <div class="slider__item-wrapper">
-          <h2 class="slider__title">Дрели</h2>
-          <p class="slider__desc">Соседям на радость!</p>
-        </div>
-
-        <img src="img/drills.jpg" width="620" height="266" alt="Строитель сверлит дрелью BOSCH">
-        <a class="slider__btn btn" href="catalog.html">Открыть каталог</a>
-      </li>
-    </ul>
-
-    <button class="slider__back" type="button" disabled>Назад</button>
-    <button class="slider__next" type="button">Вперед</button>
-
-    <div class="slider__toggles">
-      <button class="slider__toggle slider__toggle--active" type="button">Первый слайд из двух</button>
-      <button class="slider__toggle" type="button">Второй слайд из двух</button>
-    </div>
-
-  </section>
-
-  <section class="board catalog">
+  <section class="board catalog container">
     <header class="board__header">
       <h2 class="board__title">Популярные товары</h2>
       <a class="board__btn btn" href="#!">Все популярные товары</a>
@@ -253,7 +255,7 @@
     </ul>
   </section>
 
-  <section class="board">
+  <section class="board container">
     <header class="board__header">
       <h2 class="board__title">Популярные производители:</h2>
       <a class="board__btn btn" href="#!">Все популярные производители</a>
@@ -311,42 +313,44 @@
         Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
 
-      <ul class="service__list">
-        <li class="service__item">
-          <button class="service__btn service__btn--active" type="button">Доставка</button>
-        </li>
-        <li class="service__item">
-          <button class="service__btn" type="button">Гарантия</button>
-        </li>
-        <li class="service__item">
-          <button class="service__btn" type="button">Кредит</button>
-        </li>
-      </ul>
+      <div class="services__content">
+        <ul class="service__list">
+          <li class="service__item">
+            <button class="service__btn service__btn--active" type="button">Доставка</button>
+          </li>
+          <li class="service__item">
+            <button class="service__btn" type="button">Гарантия</button>
+          </li>
+          <li class="service__item">
+            <button class="service__btn" type="button">Кредит</button>
+          </li>
+        </ul>
 
-      <div class="service__slider service__slider--delivery">
-        <h3 class="service__title service__slider-title">Доставка</h3>
+        <div class="service__slider service__slider--delivery">
+          <h3 class="service__title service__slider-title">Доставка</h3>
 
-        <p class="service__text">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-        </p>
-      </div>
+          <p class="service__text">
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+          </p>
+        </div>
 
-      <div class="service__slider service__slider--warranty">
-        <h3 class="service__title service__slider-title">Гарантия</h3>
+        <div class="service__slider service__slider--warranty visually-hidden">
+          <h3 class="service__title service__slider-title">Гарантия</h3>
 
-        <p class="service__text">
-          Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-        </p>
-      </div>
+          <p class="service__text">
+            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+          </p>
+        </div>
 
-      <div class="service__slider service__slider--credit">
-        <h3 class="service__title service__slider-title">Кредит</h3>
+        <div class="service__slider service__slider--credit visually-hidden">
+          <h3 class="service__title service__slider-title">Кредит</h3>
 
-        <p class="service__text">
-          Залезть в долговую яму стало проще!
-          Кредитные консультанты придут вам на помощь.
-        </p>
-        <button class="service__slider-btn" type="button">Отправить заявку</button>
+          <p class="service__text">
+            Залезть в долговую яму стало проще!
+            Кредитные консультанты придут вам на помощь.
+          </p>
+          <button class="service__slider-btn" type="button">Отправить заявку</button>
+        </div>
       </div>
     </div>
   </section>
@@ -452,18 +456,18 @@
 
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__btn" href="#!">Вконтакте
-              <svg width="26" height="15" class="social__icon-vk"><use xlink:href="#icon-vk"></use></svg>
+            <a class="social__btn" href="#!" aria-label="Вконтакте">
+              <svg width="28" height="15" class="social__icon"><use xlink:href="#icon-vk"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__btn" href="#!">Facebook
-              <svg width="12" height="22" class="social__icon-fb"><use xlink:href="#icon-fb"></use></svg>
+            <a class="social__btn" href="#!" aria-label="Facebook">
+              <svg width="12" height="22" class="social__icon"><use xlink:href="#icon-fb"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__btn" href="#!">Instagram
-              <svg width="21" height="21" class="social__icon-insta"><use xlink:href="#icon-insta"></use></svg>
+            <a class="social__btn" href="#!" aria-label="Instagram">
+              <svg width="21" height="21" class="social__icon"><use xlink:href="#icon-insta"></use></svg>
             </a>
           </li>
         </ul>
