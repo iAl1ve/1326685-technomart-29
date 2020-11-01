@@ -13,8 +13,10 @@
         <img src="img/index-logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
       </a>
 
-      <form class="header__toolbar-form search" action="#" method="POST">
-        <input class="search__input" type="search" placeholder="Поиск:">
+      <form class="header__toolbar-form search" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="visually-hidden" for="search__input">Строка поиска</label>
+        <input class="search__input" type="search" name="search" id="search__input" placeholder="Поиск:">
+        <svg width="17" height="17" class="header__toolbar-icon-search"><use xlink:href="#icon-search"></use>
       </form>
 
       <ul class="header__toolbar-list">
@@ -49,12 +51,12 @@
 
     <div class="header__info-user">
       <div class="header__signin-btns">
-        <a class="header__signin-link" href="#!">
-          <svg width="20" height="18" class="header__icon-login"><use xlink:href="#icon-user"></use></svg>
+        <a class="header__signin-link" href="#!" aria-label="Мой аккаунт">
+          <svg width="20" height="18" class="header__signin-icon header__signin-icon--user"><use xlink:href="#icon-user"></use></svg>
           Равшан Джамшутович
         </a>
         <a class="header__signin-link" href="#!" aria-label="Выход из логина">
-          <svg width="20" height="17" class="header__icon-logout"><use xlink:href="#icon-logout"></use></svg>
+          <svg width="20" height="17" class="header__signin-icon header__signin-icon--logout"><use xlink:href="#icon-logout"></use></svg>
         </a>
       </div>
 
@@ -98,24 +100,25 @@
 
 <main>
   <section class="catalog container">
-    <h1 class="catalog__title">Перфораторы</h1>
-
     <ol class="catalog__breadcrumbs breadcrumbs">
       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="index.html">
-          <svg width="14" height="12" class="breadcrumbs__icon-home"><use xlink:href="#icon-home"></use></svg>
-        </a>
+        <a class="breadcrumbs__link" href="index.html" aria-label="Кнопка Домой"><svg width="14" height="12" class="breadcrumbs__icon-home"><use xlink:href="#icon-home"></use></svg></a>
+        <svg width="8" height="12" class="breadcrumbs__icon-right"><use xlink:href="#icon-right-small"></use></svg>
       </li>
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+        <svg width="8" height="12" class="breadcrumbs__icon-right"><use xlink:href="#icon-right-small"></use></svg>
       </li>
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="#!">Инструмент</a>
+        <svg width="8" height="12" class="breadcrumbs__icon-right"><use xlink:href="#icon-right-small"></use></svg>
       </li>
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link">Перфораторы</a>
       </li>
     </ol>
+
+    <h1 class="catalog__title">Перфораторы</h1>
 
     <section class="catalog__filter filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -126,7 +129,24 @@
     <section class="catalog__sort sort">
       <h2 class="visually-hidden">Сортировка товаров</h2>
       <p class="sort__title">Сортировка:</p>
-      <!-- Здесь будет сортировка товаров -->
+
+      <ul class="sort__list">
+        <li class="sort__item">
+          <a href="#!" class="sort__link sort__link--price sort__link--active">По цене</a>
+        </li>
+        <li class="sort__item">
+          <a href="#!" class="sort__link sort__link--type">По типу</a>
+        </li>
+        <li class="sort__item">
+          <a href="#!" class="sort__link sort__link--function">По функционалу</a>
+        </li>
+      </ul>
+
+      <div class="sort__method">
+        <a href="#!" class="sort__type sort__type--ascending sort__type--active" aria-label="Сортировать по возрастанию"></a>
+        <a href="#!" class="sort__type sort__type--descending" aria-label="Сортировать по убыванию"></a>
+      </div>
+
     </section>
 
     <ul class="catalog__list">
@@ -326,16 +346,16 @@
 
     <ul class="catalog__pagination pagination">
       <li class="pagination__item">
-        <a class="pagination__btn pagination__btn--active">1</a>
+        <a class="pagination__btn pagination__btn--active" aria-label="Каталог: Страница 1">1</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__btn" href="#!">2</a>
+        <a class="pagination__btn" href="#!" aria-label="Каталог: Страница 2">2</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__btn" href="#!">3</a>
+        <a class="pagination__btn" href="#!" aria-label="Каталог: Страница 3">3</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__btn" href="#!">Следующая</a>
+        <a class="pagination__btn" href="#!" aria-label="Перейти на следующую страницу каталога">Следующая</a>
       </li>
     </ul>
   </section>
@@ -453,7 +473,7 @@
 
   <p class="modal-succes__description">Товар добавлен в корзину!</p>
 
-  <button class="modal__btn btn-exit" type="button">Закрыть
+  <button class="modal__btn btn-exit" type="button" aria-label="Закрыть форму">Закрыть
     <svg width="21" height="21"><use xlink:href="#icon-close"></use></svg>
   </button>
   <div class="modal-succes__wrapper">
@@ -537,7 +557,7 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0C1.688 0 0 19.875 0 19.875V22.937C8.438 29.188 22 29 22 29C22 29 35.562 29.188 44 22.938V19.876C44 19.875 42.312 0 22 0ZM22 25C10.25 25 7.688 22.625 7.688 22.625C13.938 19.75 22 19.875 22 19.875C22 19.875 30.062 19.75 36.312 22.625C36.312 22.625 33.75 25 22 25ZM4.312 15.563C4.312 15.563 12.438 12.625 22 12.625C31.562 12.625 39.688 15.562 39.688 15.562C35.125 2.624 22 3.062 22 3.062C22 3.062 8.875 2.625 4.312 15.563Z" fill="white"/>
 </symbol>
 
-<symbol id="icon-right-small" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="icon-right-small" width="8" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.23697 6.64203L1.72897 1.13303C1.53126 0.935312 1.21069 0.935312 1.01297 1.13303C0.815256 1.33075 0.815256 1.65131 1.01297 1.84903L6.16297 7.00003L1.01197 12.15C0.826456 12.3498 0.832076 12.6604 1.0247 12.8533C1.21732 13.0462 1.52798 13.0523 1.72797 12.867L7.23697 7.35803C7.33249 7.26338 7.38622 7.13449 7.38622 7.00003C7.38622 6.86557 7.33249 6.73668 7.23697 6.64203Z" fill="#C1C6CE"/>
 </symbol>
 

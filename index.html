@@ -13,8 +13,10 @@
         <img src="img/index-logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
       </a>
 
-      <form class="header__toolbar-form search" action="#" method="POST">
-        <input class="search__input" type="search" placeholder="Поиск:">
+      <form class="header__toolbar-form search" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="visually-hidden" for="search__input">Строка поиска</label>
+        <input class="search__input" type="search" name="search" id="search__input" placeholder="Поиск:">
+        <svg width="17" height="17" class="header__toolbar-icon-search"><use xlink:href="#icon-search"></use>
       </form>
 
       <ul class="header__toolbar-list">
@@ -49,8 +51,8 @@
 
     <ul class="header__signin-btns">
       <li class="header__signin-item">
-        <a class="header__signin-link header__signin-link--login" href="#!">
-          <svg width="20" height="17" class="header__signin-icon-login"><use xlink:href="#icon-login"></use></svg>
+        <a class="header__signin-link" href="#!">
+          <svg width="20" height="17" class="header__signin-icon header__signin-icon--login"><use xlink:href="#icon-login"></use></svg>
           Войти
         </a>
       </li>
@@ -158,11 +160,9 @@
 
   </section>
 
-
-
   <section class="board catalog container">
     <header class="board__header">
-      <h2 class="board__title">Популярные товары</h2>
+      <h2 class="board__title">Популярные товары:</h2>
       <a class="board__btn btn" href="#!">Все популярные товары</a>
     </header>
 
@@ -263,42 +263,42 @@
 
     <ul class="board__producer producer">
       <li class="producer__item">
-        <a class="producer__link" href="#!">
+        <a class="producer__link" href="#!" aria-label="Каталог:товары бренда BOSCH">
           <img src="img/bosch.png" width="220" height="145" alt="Логотип BOSCH">
         </a>
       </li>
       <li class="producer__item">
-        <a class="producer__link" href="#!">
+        <a class="producer__link" href="#!" aria-label="Каталог:товары бренда Makita">
           <img src="img/makita.png" width="220" height="145" alt="Логотип Makita">
         </a>
       </li>
       <li class="producer__item">
-        <a class="producer__link"href="#!">
+        <a class="producer__link"href="#!" aria-label="Каталог:товары бренда DeWalt">
           <img src="img/dewalt.png" width="220" height="145" alt="Логотип DeWalt">
         </a>
       </li>
       <li class="producer__item">
-        <a class="producer__link"href="#!">
+        <a class="producer__link"href="#!" aria-label="Каталог:товары бренда Интерскол">
           <img src="img/interskol.png" width="220" height="145" alt="Логотип Интерскол">
         </a>
       </li>
       <li class="producer__item">
-        <a class="producer__link" href="#!">
+        <a class="producer__link" href="#!" aria-label="Каталог:товары бренда HITACHI">
           <img src="img/hitachi.png" width="220" height="145" alt="Логотип HITACHI">
         </a>
       </li>
       <li class="producer__item">
-        <a class="producer__link" href="#!">
+        <a class="producer__link" href="#!" aria-label="Каталог:товары бренда LG">
           <img src="img/lg.png" width="220" height="145" alt="Логотип LG">
         </a>
       </li>
       <li class="producer__item">
-        <a class="producer__link"href="#!">
+        <a class="producer__link"href="#!" aria-label="Каталог:товары бренда AEG Power Solutions">
           <img src="img/aeg.png" width="220" height="145" alt="Логотип AEG Power Solutions">
         </a>
       </li>
       <li class="producer__item">
-        <a class="producer__link" href="#!">
+        <a class="producer__link" href="#!" aria-label="Каталог:товары бренда Metabo">
           <img src="img/metabo.png" width="220" height="145" alt="Логотип Metabo">
         </a>
       </li>
@@ -492,7 +492,7 @@
   <h2 class="visually-hidden">Напишите нам</h2>
 
   <!-- Здесь будет форма для обратной связи -->
-  <button class="modal__btn btn-exit" type="button">Закрыть
+  <button class="modal__btn btn-exit" type="button" aria-label="Закрыть форму">Закрыть
     <svg width="21" height="21"><use xlink:href="#icon-close"></use></svg>
   </button>
 </section>
@@ -500,7 +500,7 @@
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
   <!-- Здесь будет карта -->
-  <button class="modal__btn btn-exit" type="button">Закрыть
+  <button class="modal__btn btn-exit" type="button" aria-label="Закрыть форму">Закрыть
     <svg width="21" height="21"><use xlink:href="#icon-close"></use></svg>
   </button>
 </section>
