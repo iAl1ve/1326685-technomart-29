@@ -16,19 +16,23 @@
       <form class="header__toolbar-form search" action="https://echo.htmlacademy.ru" method="POST">
         <label class="visually-hidden" for="search__input">Строка поиска</label>
         <input class="search__input" type="search" name="search" id="search__input" placeholder="Поиск:">
-        <svg width="17" height="17" class="header__toolbar-icon-search"><use xlink:href="#icon-search"></use>
+        <svg class="header__toolbar-icon-search" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="1">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+          </g>
+        </svg>
       </form>
 
       <ul class="header__toolbar-list">
         <li class="header__toolbar-item">
           <a class="header__toolbar-link header__toolbar-link--bookmarks" href="#!">
-            <svg width="14" height="16" class="header__toolbar-icon-bookmarks"><use xlink:href="#icon-bookmark"></use></svg>
+            <svg width="14" height="16" class="header__toolbar-icon header__toolbar-icon--bookmarks"><use xlink:href="#icon-bookmark"></use></svg>
             Закладки: 0
           </a>
         </li>
         <li class="header__toolbar-item">
           <a class="header__toolbar-link header__toolbar-link--basket" href="#!">
-            <svg width="15" height="15" class="header__toolbar-icon-basket"><use xlink:href="#icon-cart"></use></svg>
+            <svg width="15" height="15" class="header__toolbar-icon header__toolbar-icon--basket"><use xlink:href="#icon-cart"></use></svg>
             Корзина: 0
           </a>
         </li>
@@ -52,7 +56,11 @@
     <ul class="header__signin-btns">
       <li class="header__signin-item">
         <a class="header__signin-link" href="#!">
-          <svg width="20" height="17" class="header__signin-icon header__signin-icon--login"><use xlink:href="#icon-login"></use></svg>
+          <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__signin-icon header__signin-icon--login">
+            <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
+            <path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
+          </svg>
+
           Войти
         </a>
       </li>
@@ -114,7 +122,7 @@
     <article class="promo__block promo__block--discounts">
       <h3 class="promo__block-title">Скидка 50%</h3>
       <a class="promo__block-link" href="#!">На 350 товаров</a>
-      <svg width="78" height="62" class="promo__block-icon"><use xlink:href="#icon-discounts"></use></svg>
+      <svg width="59" height="72" class="promo__block-icon"><use xlink:href="#icon-discounts"></use></svg>
     </article>
     <article class="promo__block promo__block--delivery">
       <h3 class="promo__block-title">Доставка</h3>
@@ -148,12 +156,16 @@
         </li>
       </ul>
 
-      <button class="slider__back" type="button" disabled>Назад</button>
-      <button class="slider__next" type="button">Вперед</button>
+      <button class="slider__back" type="button" disabled aria-label="Перейти к предыдущему слайду">
+        <svg width="22" height="40" class="slider__back-icon" aria-hidden="true"><use xlink:href="#icon-left"></use></svg>
+      </button>
+      <button class="slider__next" type="button" aria-label="Перейти к следующему слайду">
+        <svg width="22" height="40" class="slider__next-icon" aria-hidden="true"><use xlink:href="#icon-left"></use></svg>
+      </button>
 
       <div class="slider__toggles">
-        <button class="slider__toggle slider__toggle--active" type="button">Первый слайд из двух</button>
-        <button class="slider__toggle" type="button">Второй слайд из двух</button>
+        <button class="slider__toggle" type="button" aria-label="Кнопка перехода на первый-слайд из двух"></button>
+        <button class="slider__toggle slider__toggle--active" type="button" aria-label="Кнопка перехода на второй-слайд из двух"></button>
       </div>
 
     </section>
@@ -316,13 +328,13 @@
       <div class="service__content">
         <ul class="service__list">
           <li class="service__item">
-            <button class="service__btn service__btn--active" type="button">Доставка</button>
+            <button class="service__btn" type="button">Доставка</button>
           </li>
           <li class="service__item">
             <button class="service__btn" type="button">Гарантия</button>
           </li>
           <li class="service__item">
-            <button class="service__btn" type="button">Кредит</button>
+            <button class="service__btn service__btn--active" type="button">Кредит</button>
           </li>
         </ul>
 
@@ -330,19 +342,22 @@
           <h3 class="service__title service__slider-title">Доставка</h3>
 
           <p class="service__text">
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+            Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!
           </p>
         </div>
 
-        <div class="service__slider service__slider--warranty visually-hidden">
+        <div class="service__slider service__slider--warranty">
           <h3 class="service__title service__slider-title">Гарантия</h3>
 
           <p class="service__text">
-            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+            Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.
           </p>
         </div>
 
-        <div class="service__slider service__slider--credit visually-hidden">
+        <div class="service__slider service__slider--credit service__slider--active">
           <h3 class="service__title service__slider-title">Кредит</h3>
 
           <p class="service__text">
@@ -491,16 +506,33 @@
 <section class="modal modal-feedback">
   <h2 class="visually-hidden">Напишите нам</h2>
 
-  <!-- Здесь будет форма для обратной связи -->
-  <button class="modal__btn btn-exit" type="button" aria-label="Закрыть форму">Закрыть
+  <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
+    <label class="modal-feedback__label">
+      Ваше имя:
+      <input class="modal-feedback__input modal-feedback__input--name" type="text" name="name" placeholder="Имя Фамилия">
+    </label>
+    <label class="modal-feedback__label">
+      Ваш e-mail:
+      <input class="modal-feedback__input modal-feedback__input--email" type="email" name="email" placeholder="email@example.com">
+    </label>
+    <label class="modal-feedback__label">
+      Текст письма:
+      <textarea class="modal-feedback__textarea" placeholder="В свободной форме" name="textarea"></textarea>
+    </label>
+    <div class="modal-feedback__wrapper">
+      <button class="modal-feedback__btn btn" type="submit">отправить</button>
+    </div>
+  </form>
+
+  <button class="modal-feedback__btn-exit btn-exit" type="button" aria-label="Закрыть форму">
     <svg width="21" height="21"><use xlink:href="#icon-close"></use></svg>
   </button>
 </section>
 
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
-  <!-- Здесь будет карта -->
-  <button class="modal__btn btn-exit" type="button" aria-label="Закрыть форму">Закрыть
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.32085871600612!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1604409407441!5m2!1sru!2sby" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+  <button class="modal-map__btn-exit btn-exit" type="button" aria-label="Закрыть форму">
     <svg width="21" height="21"><use xlink:href="#icon-close"></use></svg>
   </button>
 </section>
@@ -561,13 +593,8 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
 </symbol>
 
-<symbol id="icon-left" width="23" height="41" viewBox="0 0 23 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z" fill="white"/>
-</symbol>
-
-<symbol id="icon-login" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
-<path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
+<symbol id="icon-left" width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z" fill="white"/>
 </symbol>
 
 <symbol id="icon-mark" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -582,12 +609,6 @@
 
 <symbol id="icon-right-small" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.23697 6.64203L1.72897 1.13303C1.53126 0.935312 1.21069 0.935312 1.01297 1.13303C0.815256 1.33075 0.815256 1.65131 1.01297 1.84903L6.16297 7.00003L1.01197 12.15C0.826456 12.3498 0.832076 12.6604 1.0247 12.8533C1.21732 13.0462 1.52798 13.0523 1.72797 12.867L7.23697 7.35803C7.33249 7.26338 7.38622 7.13449 7.38622 7.00003C7.38622 6.86557 7.33249 6.73668 7.23697 6.64203Z" fill="#C1C6CE"/>
-</symbol>
-
-<symbol id="icon-search" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.3">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
-</g>
 </symbol>
 
 <symbol id="icon-technics" width="78" height="62" viewBox="0 0 78 62" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -620,10 +641,6 @@
 <path d="M15.572 19.485H14.631C10.502 18.997 7.47403 17.077 5.27203 14.621C3.06203 12.16 1.31803 8.99202 0.978027 4.72802V3.58402C1.05603 2.81002 1.43703 2.28002 1.87603 1.82702C2.42503 1.26602 3.25003 0.54402 4.00203 0.51902C4.55603 0.50102 5.50203 0.89902 5.88103 1.41802C6.21003 1.86402 6.38503 2.75702 6.53703 3.42102C6.69103 4.09202 7.04203 5.06402 6.94503 5.71002C6.79703 6.71702 5.45803 7.14402 5.06603 7.87602C6.37303 11.011 8.50903 13.315 11.359 14.907C12.074 14.515 12.705 13.335 13.691 13.312C14.05 13.303 14.509 13.49 14.875 13.598C15.277 13.719 15.625 13.873 15.979 14.006C16.575 14.23 17.627 14.527 17.983 15.027C18.348 15.54 18.553 16.383 18.473 16.906C18.309 17.947 16.594 19.103 15.572 19.485Z" fill="#B7BFC8"/>
 </symbol>
 
-<symbol id="icon-logout" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
-<path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" fill="#C5C5C5"/>
-</symbol>
 </svg>
 
 </body>
