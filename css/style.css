@@ -798,11 +798,18 @@ img {
   text-align: center;
   position: relative;
   min-height: 318px;
+  padding-bottom: 21px;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+}
+
+.card__img-wrapper {
+  height: 170px;
+  display: flex;
 }
 
 .card__title {
@@ -817,14 +824,16 @@ img {
 .card__discount {
   color: var(--grey-darken);
   text-transform: uppercase;
+  margin-bottom: 13px;
+  min-height: 18px;
 }
 
 .card__item {
-  list-style: none;
+  margin-bottom: 10px;
 }
 
 .card__img {
-  margin: 0 auto;
+  margin: auto;
 }
 
 .card__btn {
@@ -834,6 +843,11 @@ img {
   line-height: 1.28;
   width: 135px;
   height: 38px;
+}
+
+.card__link {
+  margin-top: auto;
+  margin-bottom: 7px;
 }
 
 .card__btn--buy {
@@ -868,6 +882,7 @@ img {
 .card__price-btn {
   position: relative;
   box-sizing: border-box;
+  margin: auto 0 0 0;
   padding: 10px;
   width: 141px;
   min-height: 38px;
@@ -896,12 +911,23 @@ img {
 }
 
 .card__list {
+  display: none;
   list-style: none;
-  padding: 0;
-  margin-top: 38px;
-  display: grid;
-  gap: 10px;
+  box-sizing: border-box;
+  height: 170px;
+  padding: 38px 0 0 0;
   font-family: var(--font-classic);
+}
+
+.card:hover .card__list,
+.card:focus .card__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover .card__img-wrapper,
+.card:focus .card__img-wrapper {
+  display: none;
 }
 
 .card:hover, .card:focus {
@@ -1611,12 +1637,16 @@ img {
 .modal-feedback__input,
 .modal-feedback__textarea {
   font-family: var(--font-additional);
-  color: var(--grey-darken);
   border-radius: 2px;
   box-sizing: border-box;
   font-size: 13px;
   border: 2px solid var(--grey-darken);
   line-height: 1.85;
+}
+
+.modal-feedback__input::placeholder,
+.modal-feedback__textarea::placeholder {
+  color: var(--grey-darken);
 }
 
 .modal-feedback__textarea {
