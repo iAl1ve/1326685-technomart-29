@@ -83,8 +83,12 @@
   --basic-orangelight: #FFC047;
   --special-lilac: #DC91D8;
   --special-beige: #F7F3EC;
+  --special-green:#00ca74;
   --special-greenlight: #8ED78F;
   --special-grey:#F4F4F4;
+  --special-grey-scale: #D7DCDE;
+  --special-grey-toogle: #ABABAB;
+  --special-grey-chechbox-hover: #B5B5B5;
   --special-red:#ff5357;
   --red-dark: #CA2C37;
   --red-darken: #BA2732;
@@ -1396,18 +1400,235 @@ img {
 .catalog__filter {
   grid-column: 1 / 2;
   grid-row: 3 / 6;
+  font-family: var(--font-additional);
 }
 
 .filter__title {
   background-color: var(--special-beige);
-  font-family: var(--font-additional);
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
   padding: 10px 18px;
   height: 38px;
   box-sizing: border-box;
+  margin: 0 0 14px 0;
+}
+
+.filter__fieldset {
+  border: none;
   margin: 0 0 18px 0;
+  padding: 0 0 26px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--basic-greylighten);
+  text-transform: uppercase;
+}
+
+.filter__fieldset:last-of-type {
+  border-bottom: none;
+}
+
+.filter__legend {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  margin: 0 0 11px 0;
+  padding: 0;
+}
+
+.filter__range-controls {
+  position: relative;
+  background-color: var(--special-beige);
+  width: 220px;
+  height: 80px;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.filter__scale {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 180px;
+  height: 2px;
+  background-color: var(--special-grey-scale);
+}
+
+.filter__bar {
+  height: 2px;
+  background-color: var(--special-green);
+}
+
+.filter__range-toggle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 30px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--special-grey-toogle);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--special-grey-toogle);
+  cursor: pointer;
+}
+
+.filter__price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 9px;
+  font-size: 0;
+}
+
+.filter__min-price,
+.filter__max-price {
+  border: none;
+  width: 95px;
+  height: 38px;
+  background-color: var(--special-beige);
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 1.76;
+}
+
+.filter__price-controls-space {
+  font-size: 16px;
+  width: 8px;
+  overflow: hidden;
+}
+
+.filter__fieldset--brands {
+  margin-top: 15px;
+}
+
+.filter__fieldset--brands .filter__legend {
+  margin-bottom: 17.5px;
+}
+
+.filter__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.26;
+}
+
+.filter__item {
+  margin-bottom: 20px;
+}
+
+.filter__item:last-child {
+  margin-bottom: 0;
+}
+
+.filter__label {
+  position: relative;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.filter__checkbox-icon {
+  display: none;
+}
+
+.filter__checkbox + .filter__label::before,
+.filter__radio + .filter__label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  box-sizing: border-box;
+}
+
+.filter__checkbox + .filter__label::before {
+  top: -3px;
+  width: 23px;
+  height: 23px;
+  border: 2px solid var(--basic-greylight);
+  border-radius: 4px;
+}
+
+.filter__checkbox:hover + .filter__label::before,
+.filter__checkbox:focus + .filter__label::before {
+  border: 2px solid var(--special-grey-chechbox-hover);
+}
+
+.filter__checkbox:disabled + .filter__label,
+.filter__radio:disabled + .filter__label {
+  opacity: 0.3;
+}
+
+.filter__checkbox:checked  + .filter__label .filter__checkbox-icon {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: -4px;
+  width: 23px;
+  height: 18px;
+  background-repeat: no-repeat;
+}
+
+.filter__checkbox:hover + .filter__label .filter__checkbox-icon path,
+.filter__checkbox:focus + .filter__label .filter__checkbox-icon path {
+  fill: var(--special-grey-chechbox-hover);
+}
+
+.filter__fieldset--power {
+  border: none;
+  margin-bottom: 37.15px;
+  padding-bottom: 0;
+}
+
+.filter__fieldset--power .filter__legend{
+  margin-bottom: 23.35px;
+}
+
+.filter-fieldset-power .filter__item {
+  margin-bottom: 22.5px;
+}
+
+.filter__radio + .filter__label::before {
+  top: -4px;
+  width: 25px;
+  height: 25px;
+  border: 4px solid var(--basic-greylight);
+  border-radius: 50%;
+}
+
+.filter__radio:hover + .filter__label::before,
+.filter__radio:focus + .filter__label::before {
+  border: 4px solid var(--special-grey-chechbox-hover);
+}
+
+.filter__radio:checked  + .filter__label::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--basic-greylight);
+  border-radius: 50%;
+}
+
+.filter__radio:hover  + .filter__label::after,
+.filter__radio:focus  + .filter__label::after {
+  background-color: var(--special-grey-chechbox-hover);
+}
+
+.filter__submit {
+  box-sizing: border-box;
+  border: 1px solid var(--basic-greylighten);
+  background-color: var(--basic-white);
+  width: 220px;
+  height: 38px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.38;
 }
 
 /* Sort */
