@@ -9,37 +9,37 @@
 <body class="page-body">
 <header class="header">
   <div class="header__toolbar container">
-      <a class="header__logo logo">
-        <img src="img/index-logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
-      </a>
+    <a class="header__logo logo">
+      <img src="img/index-logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
+    </a>
 
-      <form class="header__toolbar-form search" action="https://echo.htmlacademy.ru" method="POST">
-        <label class="visually-hidden" for="search__input">Строка поиска</label>
-        <input class="search__input" type="search" name="search" id="search__input" placeholder="Поиск:">
-        <svg class="header__toolbar-icon-search" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g opacity="1">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
-          </g>
-        </svg>
-      </form>
+    <form class="header__toolbar-form search" action="https://echo.htmlacademy.ru" method="POST">
+      <label class="visually-hidden" for="search__input">Строка поиска</label>
+      <input class="search__input" type="search" name="search" id="search__input" placeholder="Поиск:">
+      <svg class="header__toolbar-icon-search" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="1">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+        </g>
+      </svg>
+    </form>
 
-      <ul class="header__toolbar-list">
-        <li class="header__toolbar-item">
-          <a class="header__toolbar-link header__toolbar-link--bookmarks" href="#!">
-            <svg width="14" height="16" class="header__toolbar-icon header__toolbar-icon--bookmarks"><use xlink:href="#icon-bookmark"></use></svg>
-            Закладки: 0
-          </a>
-        </li>
-        <li class="header__toolbar-item">
-          <a class="header__toolbar-link header__toolbar-link--basket" href="#!">
-            <svg width="15" height="15" class="header__toolbar-icon header__toolbar-icon--basket"><use xlink:href="#icon-cart"></use></svg>
-            Корзина: 0
-          </a>
-        </li>
-        <li class="header__toolbar-item">
-          <a class="header__toolbar-link" href="#!">Оформить заказ</a>
-        </li>
-      </ul>
+    <ul class="header__toolbar-list">
+      <li class="header__toolbar-item">
+        <a class="header__toolbar-link header__toolbar-link--bookmarks" href="#!">
+          <svg width="14" height="16" class="header__toolbar-icon header__toolbar-icon--bookmarks"><use xlink:href="#icon-bookmark"></use></svg>
+          Закладки: 0
+        </a>
+      </li>
+      <li class="header__toolbar-item">
+        <a class="header__toolbar-link header__toolbar-link--basket" href="#!">
+          <svg width="15" height="15" class="header__toolbar-icon header__toolbar-icon--basket"><use xlink:href="#icon-cart"></use></svg>
+          Корзина: 0
+        </a>
+      </li>
+      <li class="header__toolbar-item">
+        <a class="header__toolbar-link" href="#!">Оформить заказ</a>
+      </li>
+    </ul>
   </div>
 
   <div class="header__info container">
@@ -136,6 +136,16 @@
         <li class="slider__item">
 
           <div class="slider__item-wrapper">
+            <h2 class="slider__title">Дрели</h2>
+            <p class="slider__desc">Соседям на радость!</p>
+          </div>
+
+          <img src="img/drills.jpg" width="620" height="266" alt="Строитель сверлит дрелью BOSCH">
+          <a class="slider__btn btn" href="catalog.html">Открыть каталог</a>
+        </li>
+        <li class="slider__item slider__item--show">
+
+          <div class="slider__item-wrapper">
             <h2 class="slider__title">Перфораторы</h2>
             <p class="slider__desc">Настоящие мужские игрушки</p>
           </div>
@@ -144,19 +154,9 @@
 
           <a class="slider__btn btn" href="catalog.html">Открыть каталог</a>
         </li>
-        <li class="slider__item visually-hidden">
-
-          <div class="slider__item-wrapper">
-            <h2 class="slider__title">Дрели</h2>
-            <p class="slider__desc">Соседям на радость!</p>
-          </div>
-
-          <img src="img/drills.jpg" width="620" height="266" alt="Строитель сверлит дрелью BOSCH">
-          <a class="slider__btn btn" href="catalog.html">Открыть каталог</a>
-        </li>
       </ul>
 
-      <button class="slider__back" type="button" disabled aria-label="Перейти к предыдущему слайду">
+      <button class="slider__back" type="button" aria-label="Перейти к предыдущему слайду">
         <svg width="22" height="40" class="slider__back-icon" aria-hidden="true"><use xlink:href="#icon-left"></use></svg>
       </button>
       <button class="slider__next" type="button" aria-label="Перейти к следующему слайду">
@@ -337,17 +337,17 @@
       <div class="service__content">
         <ul class="service__list">
           <li class="service__item">
-            <button class="service__btn" type="button">Доставка</button>
+            <button class="service__btn service__btn--delivery service__btn--active" type="button">Доставка</button>
           </li>
           <li class="service__item">
-            <button class="service__btn" type="button">Гарантия</button>
+            <button class="service__btn service__btn--warranty" type="button">Гарантия</button>
           </li>
           <li class="service__item">
-            <button class="service__btn service__btn--active" type="button">Кредит</button>
+            <button class="service__btn service__btn--credit" type="button">Кредит</button>
           </li>
         </ul>
 
-        <div class="service__slider service__slider--delivery">
+        <div class="service__slider service__slider--delivery service__slider--active">
           <h3 class="service__title service__slider-title">Доставка</h3>
 
           <p class="service__text">
@@ -366,7 +366,7 @@
           </p>
         </div>
 
-        <div class="service__slider service__slider--credit service__slider--active">
+        <div class="service__slider service__slider--credit">
           <h3 class="service__title service__slider-title">Кредит</h3>
 
           <p class="service__text">
@@ -546,6 +546,22 @@
   </button>
 </section>
 
+<section class="modal modal-succes">
+  <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
+
+  <svg width="66" height="66" class="modal-succes__icon"><use xlink:href="#icon-mark"></use></svg>
+  <p class="modal-succes__description">Товар добавлен в корзину!</p>
+
+  <button class="modal-succes__btn-exit btn-exit" type="button" aria-label="Закрыть форму">
+    <svg width="21" height="21"><use xlink:href="#icon-close"></use></svg>
+  </button>
+
+  <div class="modal-succes__wrapper">
+    <a class="modal-succes__btn btn" href="#!">Оформить заказ</a>
+    <a class="modal-succes__btn modal-succes__btn-order btn--white" href="#!">Продолжить покупки</a>
+  </div>
+</section>
+
 <svg style="display: none">
 
 <symbol id="icon-bookmark" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -602,10 +618,6 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0C1.688 0 0 19.875 0 19.875V22.937C8.438 29.188 22 29 22 29C22 29 35.562 29.188 44 22.938V19.876C44 19.875 42.312 0 22 0ZM22 25C10.25 25 7.688 22.625 7.688 22.625C13.938 19.75 22 19.875 22 19.875C22 19.875 30.062 19.75 36.312 22.625C36.312 22.625 33.75 25 22 25ZM4.312 15.563C4.312 15.563 12.438 12.625 22 12.625C31.562 12.625 39.688 15.562 39.688 15.562C35.125 2.624 22 3.062 22 3.062C22 3.062 8.875 2.625 4.312 15.563Z" fill="white"/>
 </symbol>
 
-<symbol id="icon-right-small" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.23697 6.64203L1.72897 1.13303C1.53126 0.935312 1.21069 0.935312 1.01297 1.13303C0.815256 1.33075 0.815256 1.65131 1.01297 1.84903L6.16297 7.00003L1.01197 12.15C0.826456 12.3498 0.832076 12.6604 1.0247 12.8533C1.21732 13.0462 1.52798 13.0523 1.72797 12.867L7.23697 7.35803C7.33249 7.26338 7.38622 7.13449 7.38622 7.00003C7.38622 6.86557 7.33249 6.73668 7.23697 6.64203Z" fill="#C1C6CE"/>
-</symbol>
-
 <symbol id="icon-technics" width="78" height="62" viewBox="0 0 78 62" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 45.875C0 36.968 7.22 29.749 16.125 29.749C25.031 29.749 32.251 36.968 32.25 45.875C32.25 54.78 25.03 62 16.125 62C7.22 62 0 54.78 0 45.875ZM10.9579 51.0421C12.3283 52.4125 14.187 53.1823 16.125 53.182C18.063 53.1823 19.9217 52.4125 21.2921 51.0421C22.6625 49.6718 23.4323 47.813 23.432 45.875C23.432 41.8395 20.1605 38.568 16.125 38.568C12.0895 38.568 8.818 41.8395 8.818 45.875C8.81773 47.813 9.58749 49.6718 10.9579 51.0421ZM60.854 45.874C56.4015 45.874 52.792 49.4835 52.792 53.936C52.792 56.8163 54.3286 59.4778 56.823 60.9179C59.3174 62.3581 62.3906 62.3581 64.885 60.9179C67.3794 59.4778 68.916 56.8163 68.916 53.936C68.9165 51.7977 68.0673 49.7468 66.5553 48.2347C65.0433 46.7227 62.9923 45.8735 60.854 45.874ZM55.792 53.936C55.7914 56.7322 58.0578 58.9995 60.854 59C63.6502 59.0006 65.9174 56.7342 65.918 53.938C65.9186 51.1418 63.6522 48.8746 60.856 48.874C58.0598 48.8735 55.7926 51.1398 55.792 53.936Z" fill="white"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M75.437 31.313C75.875 34.625 77.898 49.727 77.898 49.727C77.898 49.727 78.641 52.875 75 52.875H73.045C72.656 46.473 67.355 41.396 60.854 41.396C54.353 41.396 49.053 46.473 48.663 52.875H38.499C39.19 50.664 39.563 48.313 39.563 45.875C39.563 32.929 29.069 22.436 16.125 22.436C11.4651 22.4285 6.90969 23.8168 3.046 26.422C3.001 23.463 3.004 12.537 5.312 6.167C5.312 6.167 6.375 3.625 8.75 3C11.125 2.375 33.5 0 33.5 0C33.5 0 35.814 0.062 36.626 1.875C37.438 3.688 47.188 23.75 47.188 23.75L59 25.128V19.833H63V14H66V25.946L71.812 26.625C71.812 26.625 74.89 27.172 75.437 31.313ZM16.125 19.833H23.083V6.167H16.125V19.833ZM33.083 19.833H26.125V6.167H33.083V19.833ZM49 36H53.016V29H49V36ZM60.016 36H56V29H60.016V36ZM63 36H67.016V29H63V36Z" fill="white"/>
@@ -629,5 +641,6 @@
 
 </svg>
 
+<script src="js/main.script.js"></script>
 </body>
 </html>
