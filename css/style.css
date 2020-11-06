@@ -229,6 +229,7 @@ img {
 .header {
   background-image: linear-gradient(to bottom, var(--basic-dark) 42px, var(--grey-lighten) 42px);
   margin-bottom: 60px;
+  min-height: 320px;
 }
 
 .page-catalog  .header{
@@ -538,7 +539,7 @@ img {
 
 .promo__block {
   max-width: 300px;
-  height: 123px;
+  min-height: 123px;
   padding-top: 20px;
   padding-left: 22px;
   padding-bottom: 21px;
@@ -555,6 +556,7 @@ img {
   line-height: 1.25;
   color: var(--basic-white);
   margin: 0 0 14px 0;
+  width: 140px;
 }
 
 .promo__block-link {
@@ -675,8 +677,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 23px;
-  padding-left: 24px;
+  padding: 23px 24px 10px 24px;
   width: 100%;
   min-height: 104px;
   box-sizing: border-box;
@@ -1222,6 +1223,7 @@ img {
   color: var(--basic-white);
   font-size: 18px;
   line-height: 1.33;
+  min-height: 300px;
 }
 
 .footer__nav {
@@ -1762,12 +1764,14 @@ img {
   border-radius: 2px;
   box-sizing: border-box;
   height: 38px;
-  padding: 10px 15px;
+  min-width: 38px;
+  padding: 10px;
   font-size: 13px;
   line-height: 1.38;
   display: inline-block;
   color: var(--basic-black);
-  text-transform: uppercase;;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .pagination__btn--active {
@@ -1784,7 +1788,7 @@ img {
 }
 
 .pagination__item:last-child .pagination__btn{
-  padding: 10px 31px 10px 32px;
+  min-width: 140px;
 }
 
 /* Catalog */
@@ -1793,6 +1797,8 @@ img {
   background-color: var(--grey-lighten);
   padding-top: 64px;
   padding-bottom: 68px;
+  min-height: 261px;
+  box-sizing: border-box;
 }
 
 .catalog__description-title {
@@ -1800,6 +1806,7 @@ img {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
+  margin: 0 0 25px 0;
 }
 
 .catalog__description-text {
