@@ -1208,7 +1208,7 @@ img {
   color: var(--basic-white);
   background-color: var(--special-red);
   width: 195px;
-  height: 38px;
+  min-height: 38px;
   border-radius: 2px;
   border: none;
   cursor: pointer;
