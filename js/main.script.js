@@ -1,4 +1,4 @@
-'use strict';
+`use strict`;
 
 const KEY_ESC = 27;
 const CLASS_MODAL_SHOW = `modal--show`;
@@ -7,7 +7,7 @@ const CLASS_SLIDER_SHOW = `slider__item--show`;
 const CLASS_PREFIX_ACTIVE = `active`;
 
 let isStorageSupport = true;
-let storage = "";
+let storage = ``;
 
 try {
   storage = localStorage.getItem(`login`);
@@ -46,7 +46,7 @@ const feedbackForm = modalFeedback.querySelector(`.modal-feedback__form`);
 showFeedbackBtn.addEventListener(`click`, (evt) => {
   evt.preventDefault();
   modalFeedback.classList.add(CLASS_MODAL_SHOW);
-  feedbackForm.addEventListener('submit', onSubmitFeedbackForm);
+  feedbackForm.addEventListener(`submit`, onSubmitFeedbackForm);
 
   if (storage) {
     modalFeedbackLogin.value = localStorage.getItem(`login`);
@@ -61,7 +61,7 @@ const closeModalFeedback = function (evt) {
   evt.preventDefault();
   modalFeedback.classList.remove(CLASS_MODAL_SHOW);
   modalFeedback.classList.remove(CLASS_MODAL_ERROE);
-  feedbackForm.removeEventListener('submit', onSubmitFeedbackForm);
+  feedbackForm.removeEventListener(`submit`, onSubmitFeedbackForm);
 };
 
 modalFeedbackClose.addEventListener(`click`, closeModalFeedback);
@@ -119,7 +119,7 @@ const onClickToggle = function (evt) {
 };
 
 sliderToggleBtns.forEach((el) => {
-  el.addEventListener('click', onClickToggle);
+  el.addEventListener(`click`, onClickToggle);
 })
 
 const onClickSlideSwitch = function (newActiveSliderItemId) {
@@ -162,7 +162,7 @@ serviceBtns.forEach((el, itemId) => {
   if (el.classList.contains(`service__btn--${CLASS_PREFIX_ACTIVE}`)) {
     activeSliderServiceItemId = itemId;
   }
-  el.addEventListener('click', onClickServiceBtns);
+  el.addEventListener(`click`, onClickServiceBtns);
 })
 
 /* Показ формы добавления товара в корзину */
@@ -185,7 +185,7 @@ const closeModalSucces = function (evt) {
 };
 
 cardBuyBtns.forEach((el) => {
-  el.addEventListener('click', onClickBuyBtns);
+  el.addEventListener(`click`, onClickBuyBtns);
 })
 
 modalSuccesClose.addEventListener(`click`, closeModalSucces);
@@ -193,7 +193,7 @@ buyCloseButton.addEventListener(`click`, closeModalSucces);
 
 /* Управление закрытием форм через ESC */
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener(`keydown`, function (evt) {
   if (evt.keyCode === KEY_ESC) {
     if (modalFeedback.classList.contains(CLASS_MODAL_SHOW)) {
       closeModalFeedback(evt);

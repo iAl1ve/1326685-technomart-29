@@ -22,7 +22,7 @@ const closeModalSucces = function (evt) {
 };
 
 cardBuyBtns.forEach((el) => {
-  el.addEventListener('click', onClickBuyBtns);
+  el.addEventListener(`click`, onClickBuyBtns);
 })
 
 modalSuccesClose.addEventListener(`click`, closeModalSucces);
@@ -30,7 +30,7 @@ buyCloseButton.addEventListener(`click`, closeModalSucces);
 
 /* Управление закрытием форм через ESC */
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener(`keydown`, function (evt) {
   if (evt.keyCode === KEY_ESC) {
     if (modalSucces.classList.contains(CLASS_MODAL_SHOW)) {
       closeModalSucces(evt);
